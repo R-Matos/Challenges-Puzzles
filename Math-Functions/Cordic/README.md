@@ -3,7 +3,11 @@
 <h3>Description</h3>
 <p>
 This program allows you to get the sin or cos of an angle to the precision of your choice.
+Can only be used for angles between 0 < theta <= pi/2 .
 </p>
+<p>
+Uses the CORDIC method. <a href="https://en.wikipedia.org/wiki/CORDIC">Wiki Link.</a>
+<p/>
 
 <h3> Resources Used </h3> 
  <ul> 
