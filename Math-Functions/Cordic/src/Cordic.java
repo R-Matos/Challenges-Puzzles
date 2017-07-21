@@ -100,7 +100,6 @@ public class Cordic {
 
     
     private static void createLookupTable(int iterations) {
-    	//TODO: Write to file, each line is an iteration
         lookup = new BigDecimal[iterations];
         for (int i=0; i<iterations; i++) {
             lookup[i] = new BigDecimal(Math.atan(1 / Math.pow(2,i)), mc);															//atan(2^-i);
@@ -131,85 +130,5 @@ public class Cordic {
         
         BigDecimal[] result = {x,y};
         return result;
-    }
- 
-    
-
-    
-    
-    
-    
-    
-    
-    
-    /*
-    
-    
-    public class Cordic {
-    	 
-    	private static MathContext mc;
-        private static double[] lookup;
-        private static long iterations;
-        private static double K = 0.60725293510314;
-        private static final double halfPi = 1.57079632679;
-     
-        private Cordic() { }
-     
-        public static double sin(double theta, long precision) {
-        	setup(precision);
-            return sinCos(theta, iterations)[1];
-        }
-     
-//        public static double cos(double theta) {
-////            createLookupTable();
-////            return sinCos(theta)[0];
-//        }
-     
-        private static void setup(long precision) {
-        	iterations = (precision * 4) + 1;
-            createLookupTable(iterations);    	
-        }
-        
-        private static double[] sinCos(double theta, long iterations) {
-            if (theta < 0 || theta > halfPi) {
-                throw new IllegalArgumentException("Required value 0 < x < Pi/2");
-            }
-            double x = K;
-            double y = 0;
-            double z = theta;
-            double v = 1.0;
-            for (int i=0; i<iterations; i++) {
-                double d = (z >= 0)? +1 : -1;
-                double tx = x - d * y * v;
-                double ty = y + d * x * v;
-                double tz = z - d * lookup[i];
-                x = tx; y= ty; z = tz;
-                v *= 0.5;
-                
-                System.out.println("i:  "+i);
-                System.out.println("d:  "+d);
-                System.out.println("tx: "+tx);
-                System.out.println("ty: "+ty);
-                System.out.println("tz: "+tz);
-                System.out.println("v:  "+v);            
-                System.out.println();
-            }
-            double[] result = {x,y};
-            return result;
-        }
-     
-        private static void createLookupTable(long iterations) {
-        	//TODO: Write to file, each line is an iteration
-            lookup = new double[(int)iterations];
-            for (int i=0; i<iterations; i++) {
-                lookup[i] = Math.atan(1 / Math.pow(2,i));
-                System.out.format("Tan (%02d): %.14f / %018.3f %n", i,  lookup[i], Math.pow(2,i));
-            }
-        }
-        
-        */
-        
-        
-        
- 
+    } 
 }
