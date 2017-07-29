@@ -17,8 +17,10 @@ Find out the maximum number of possible dots on the board without them seeing ea
 		<li>Count number of dots present, this is the maximum possible number</li>
 	<ol>
 </p>
- 
-@since 29-07-2017
-@version 1.0
-@author RMatos
-@see <a href="http://acm.hit.edu.cn/hoj/problem/view?id=1086">Challenge Description</a>
+
+@since 29-07-2017 <br>
+@version 1.0 <br>
+@author RMatos <br>
+@see 
+<a href="http://acm.hit.edu.cn/hoj/problem/view?id=1086">Challenge Description Website</a>
+<a href="https://github.com/RMatos2442/Challenges-Puzzles/blob/master/International-Collegiate-Programming-Contest/Dont_Get_Rooked/Problem_description.pdf">Challenge Description pdf</a>
