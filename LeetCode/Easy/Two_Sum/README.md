@@ -7,7 +7,7 @@ Given an array of integers, return indices of the two numbers such that they add
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 </p>
  
-@since 29-07-2017
-@version 1.0
-@author RMatos
+@since 29-07-2017 <br>
+@version 1.0 <br>
+@author RMatos <br>
 @see <a href="https://leetcode.com/problems/two-sum/description/">Problem Description</a> 
